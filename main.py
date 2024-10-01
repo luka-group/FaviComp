@@ -181,7 +181,7 @@ if __name__ == '__main__':
         target_model = model
     else:
         print("Target Model:", args.target_model_name)
-        target_model = AutoModelForCausalLM.from_pretrained(args.model_name, device_map="auto", load_in_8bit=False, torch_dtype=torch.float16)
+        target_model = AutoModelForCausalLM.from_pretrained(args.target_model_name, device_map="auto", load_in_8bit=False, torch_dtype=torch.float16)
  
     main(args)
     
