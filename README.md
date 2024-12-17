@@ -23,16 +23,16 @@ python main.py \
 --batch_size 28 \
 --dataset nq 
 ```
-- `model_name`: Compression model name ('meta-llama/Meta-Llama-3-8B-Instruct' or 'mistralai/Mistral-7B-Instruct-v0.3')
-- `target_model_name`: Target model name (Use same model as `model_name` to reproduce our work)
+- `model_name`: Compression model name (e.g. meta-llama/Llama-3.2-3B-Instruct)
+- `target_model_name`: Target model name (e.g. meta-llama/Meta-Llama-3-8B-Instruct)
 - `alpha`: Ensemble coefficient alpha
 - `dataset`: Dataset ('nq', 'tqa', 'hotpotqa', 'wiki', 'musique')
 
 ## Evaluation
-After running FaviComp, run performance evaluation script below using the same parameters. 
+After running FaviComp, run the performance evaluation script below using the same parameters. 
 ```bash
 python evaluate.py \
---model_name meta-llama/Meta-Llama-3-8B-Instruct \
+--model_name meta-llama/Llama-3.2-3B-Instruct \
 --target_model_name meta-llama/Meta-Llama-3-8B-Instruct \
 --alpha 0.5 \
 --dataset nq 
@@ -41,7 +41,7 @@ python evaluate.py \
 Calculate perplexity of the compressed evidence using the script below.
 ```bash
 python eval_ppl.py \
---model_name meta-llama/Meta-Llama-3-8B-Instruct \
+--model_name meta-llama/Llama-3.2-3B-Instruct \
 --target_model_name meta-llama/Meta-Llama-3-8B-Instruct \
 --alpha 0.5 \
 --dataset nq 
