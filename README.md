@@ -14,10 +14,10 @@ pip install -r requirements.txt
 Data can be download in this [link](https://drive.google.com/drive/folders/1UbWDfb7Bi6Vza2DvKB-bi0TgmxpB4xSY?usp=drive_link). Place `data/` under root directory. 
 
 ## Run FaviComp
-Example script for NQ dataset with the compression and target model being Llama-3-8B-Instruct. Make sure the both compression and target model has the same tokenizer. Change the parameters to run on other datasets and models. 
+Example script for NQ dataset. Make sure both the compression and target model have the same tokenizer. Change the parameters to run on other datasets and models. 
 ```bash
 python main.py \
---model_name meta-llama/Meta-Llama-3-8B-Instruct \
+--model_name meta-llama/Llama-3.2-3B-Instruct \
 --target_model_name meta-llama/Meta-Llama-3-8B-Instruct \
 --alpha 0.5 \
 --batch_size 28 \
