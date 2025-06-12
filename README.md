@@ -46,3 +46,13 @@ python eval_ppl.py \
 --alpha 0.5 \
 --dataset nq 
 ```
+
+## Citation
+
+```bibtex
+@article{jung2024familiarity,
+  title={Familiarity-aware evidence compression for retrieval augmented generation},
+  author={Jung, Dongwon and Liu, Qin and Huang, Tenghao and Zhou, Ben and Chen, Muhao},
+  journal={arXiv preprint arXiv:2409.12468},
+  year={2024}
+}
