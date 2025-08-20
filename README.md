@@ -1,5 +1,5 @@
 # Familiarity-aware Evidence Compression for Retrieval Augmented Generation
-We propose [FaviComp (**Fa**miliarity-aware E**vi**dence **Comp**ression)](https://arxiv.org/abs/2409.12468), a novel training-free evidence compression technique that makes retrieved evidence more familiar to the target model, while seamlessly integrating parametric knowledge from the model. 
+We propose [FaviComp (**Fa**miliarity-aware E**vi**dence **Comp**ression)](https://arxiv.org/abs/2409.12468) (Findings of EMNLP 2025), a novel training-free evidence compression technique that makes retrieved evidence more familiar to the target model, while seamlessly integrating parametric knowledge from the model. 
 
 ![](assets/method.png)
 
